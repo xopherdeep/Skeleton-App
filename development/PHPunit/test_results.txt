@@ -1,0 +1,509 @@
+
+Warning: PHP Startup: Unable to load dynamic library 'c:/wamp/bin/php/php5.4.3/ext/php_memcache.dll' - %1 ist keine zul�ssige Win32-Anwendung.
+ in Unknown on line 0
+PHPUnit 3.7.28 by Sebastian Bergmann.
+
+..........FF......FFFFFF.....................................   61 / 1182 (  5%)
+.............................................................  122 / 1182 ( 10%)
+............................................E................  183 / 1182 ( 15%)
+.............................................................  244 / 1182 ( 20%)
+.FFF.........F...............................................  305 / 1182 ( 25%)
+..........F..F...............................................  366 / 1182 ( 30%)
+.............................................................  427 / 1182 ( 36%)
+.............................................................  488 / 1182 ( 41%)
+.............................................................  549 / 1182 ( 46%)
+.............................................................  610 / 1182 ( 51%)
+..........................F..................................  671 / 1182 ( 56%)
+.....................................F......F................  732 / 1182 ( 61%)
+.............................................................  793 / 1182 ( 67%)
+..........FFFFFFFFFFFFFFFFF.FFFFFF.........F.................  854 / 1182 ( 72%)
+.............................................................  915 / 1182 ( 77%)
+.....................................FFF.....................  976 / 1182 ( 82%)
+............................................................. 1037 / 1182 ( 87%)
+.....................................F....................... 1098 / 1182 ( 92%)
+............................................................. 1159 / 1182 ( 98%)
+.......................
+
+Time: 34.95 seconds, Memory: 45.50Mb
+
+There was 1 error:
+
+1) AssignGlobalTests::testAssignGlobalGetGlobalArray
+Array to string conversion
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\AssignGlobalTests.php:41
+
+--
+
+
+There were 45 failures:
+
+1) ClearCompiledTests::testClearCompileid
+Failed asserting that 0 matches expected 4.
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\ClearCompiledTests.php:255
+C:\wamp\www\smarty3.1.0\development\PHPunit\ClearCompiledTests.php:229
+
+2) ClearCompiledTests::testSubsClearCompileid
+Failed asserting that 0 matches expected 4.
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\ClearCompiledTests.php:255
+C:\wamp\www\smarty3.1.0\development\PHPunit\ClearCompiledTests.php:233
+
+3) ClearCompiledTests::testClearTemplateCacheidExpired
+Failed asserting that 0 matches expected 1.
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\ClearCompiledTests.php:347
+C:\wamp\www\smarty3.1.0\development\PHPunit\ClearCompiledTests.php:328
+
+4) ClearCompiledTests::testSubsClearTemplateCacheidExpired
+Failed asserting that 0 matches expected 1.
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\ClearCompiledTests.php:347
+C:\wamp\www\smarty3.1.0\development\PHPunit\ClearCompiledTests.php:332
+
+5) ClearCompiledTests::testClearCacheidExpired
+Failed asserting that 0 matches expected 1.
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\ClearCompiledTests.php:375
+C:\wamp\www\smarty3.1.0\development\PHPunit\ClearCompiledTests.php:356
+
+6) ClearCompiledTests::testSubsClearCacheidExpired
+Failed asserting that 0 matches expected 1.
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\ClearCompiledTests.php:375
+C:\wamp\www\smarty3.1.0\development\PHPunit\ClearCompiledTests.php:360
+
+7) ClearCompiledTests::testClearTemplateCacheid
+Failed asserting that 0 matches expected 1.
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\ClearCompiledTests.php:402
+C:\wamp\www\smarty3.1.0\development\PHPunit\ClearCompiledTests.php:384
+
+8) ClearCompiledTests::testSubsClearTemplateCacheid
+Failed asserting that 0 matches expected 1.
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\ClearCompiledTests.php:402
+C:\wamp\www\smarty3.1.0\development\PHPunit\ClearCompiledTests.php:388
+
+9) CacheResourceFileTests::testClearCacheCacheIdCompileId
+Failed asserting that 0 matches expected 2.
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\CacheResourceFileTests.php:142
+
+10) CacheResourceFileTests::testSmarty2ClearCacheCacheIdCompileId
+Failed asserting that true is false.
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\CacheResourceFileTests.php:163
+
+11) CacheResourceFileTests::testSmarty2ClearCacheCacheIdCompileIdSub
+Failed asserting that true is false.
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\CacheResourceFileTests.php:184
+
+12) CacheResourceFileTests::testClearCacheCacheFile
+Failed asserting that 2 matches expected 3.
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\CacheResourceFileTests.php:388
+
+13) CompileBlockExtendsTests::testVariableExtends_028
+Exception for illegal variable template file name not been raised.
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\CompileBlockExtendsTests.php:374
+
+14) CompileBlockExtendsTests::testNocacheBlock_030_2
+Failed asserting that 'parent b1 b1_2*parent b2*grandchild b3 b3_2*include b3 b6_2*grandchild b6 b6_2*<br>child b4 b4_1*grandchild b4 b4_2**<br>child b5 b5_2*grandchild b5 b5_2**<br>child b61 b6_1*include 61 b6_2*grandchild b6 b6_2*<br>child b62 b6_2*include 62 b6_2*grandchild b6 b6_2*<br>child b63 b6_1*grandchild b6 b6_2*<br>child b64 b6_1*include b64 b6_2*grandchild b6 b6_2*<br>parent include b6_2*grandchild b6 b6_2*<br>parent include2 grandchild b6 b6_2*<br><br>' contains "child b61 b6_1*include 61 b6_1*grandchild b6 b6_1*".
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\CompileBlockExtendsTests.php:431
+
+15) ExtendsResourceTests::testNocacheBlock_030_2
+Failed asserting that 'parent b1 b1_2*parent b2*grandchild b3 b3_2*include b3 b6_2*grandchild b6 b6_2*<br>child b4 b4_1*grandchild b4 b4_2**<br>child b5 b5_2*grandchild b5 b5_2**<br>child b61 b6_1*include 61 b6_2*grandchild b6 b6_2*<br>child b62 b6_2*include 62 b6_2*grandchild b6 b6_2*<br>child b63 b6_1*grandchild b6 b6_2*<br>child b64 b6_1*include b64 b6_2*grandchild b6 b6_2*<br>parent include b6_2*grandchild b6 b6_2*<br>parent include2 grandchild b6 b6_2*<br><br>' contains "child b61 b6_1*include 61 b6_1*grandchild b6 b6_1*".
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\ExtendsResourceTests.php:88
+
+16) MuteExpectedErrorsTests::testUnmutedCaching
+Failed asserting that 1 matches expected 7.
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\MuteExpectedErrorsTests.php:101
+
+17) OutputFilterTrimWhitespaceTests::testWhitespace
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ '<!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de"> <head> <meta charset="utf-8" /> <meta http-equiv="content-type" content="text/html; charset=utf-8" /> <title>whitespace</title> <meta name="title" content="" /> <meta name="description" content="" /> <link rel="stylesheet" type="text/css" href="screen.css" /> </head> <body> <!--[if lte IE 6]>internet explorer conditional comment<![endif]--> <!--[if lte IE 7]>internet explorer conditional comment<![endif]--> <div class="  asdasd   " id='not' data-one = " " style=" " title=' ' ></div> <img src="foo" alt="" /> <script type="text/javascript">
+-        foobar
+-    </script> <script>
+-        foobar
+-    </script> <pre id="foobar">
+-        foobar
+-    </pre> <pre>
+-        foobar
+-    </pre> <p> <textarea name="foobar">
+-        foobar
+-    </textarea> </p> </body> </html>'
++		foobar
++	</script> <script>
++		foobar
++	</script> <pre id="foobar">
++		foobar
++	</pre> <pre>
++		foobar
++	</pre> <p> <textarea name="foobar">
++		foobar
++	</textarea> </p> </body> </html>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\OutputFilterTrimWhitespaceTests.php:44
+
+18) PluginFunctionHtmlSelectDateTests::testDefault
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <select name="Date_Year">
+-<option value="2013" selected="selected">2013</option>
++<option value="2014">2014</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:280
+
+19) PluginFunctionHtmlSelectDateTests::testPrefix
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <select name="foobar_Year">
+-<option value="2013" selected="selected">2013</option>
++<option value="2014">2014</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:290
+
+20) PluginFunctionHtmlSelectDateTests::testFieldArray
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <select name="namorized[Date_Year]">
+-<option value="2013" selected="selected">2013</option>
++<option value="2014">2014</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:300
+
+21) PluginFunctionHtmlSelectDateTests::testExtra
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <select name="Date_Year" data-foo="xy">
+-<option value="2013" selected="selected">2013</option>
++<option value="2014">2014</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:316
+
+22) PluginFunctionHtmlSelectDateTests::testFieldOrder
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <select name="Date_Year">
+-<option value="2013" selected="selected">2013</option>
++<option value="2014">2014</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:338
+
+23) PluginFunctionHtmlSelectDateTests::testFieldSeparator
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ </select> - <select name="Date_Year">
+-<option value="2013" selected="selected">2013</option>
++<option value="2014">2014</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:355
+
+24) PluginFunctionHtmlSelectDateTests::testEmpty
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <option value=""></option>
+-<option value="2013" selected="selected">2013</option>
++<option value="2014">2014</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:371
+
+25) PluginFunctionHtmlSelectDateTests::testEmptyUnset
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <option value=""></option>
+-<option value="2013">2013</option>
++<option value="2014">2014</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:399
+
+26) PluginFunctionHtmlSelectDateTests::testId
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <select name="Date_Year" id="Date_Year">
+-<option value="2013" selected="selected">2013</option>
++<option value="2014">2014</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:427
+
+27) PluginFunctionHtmlSelectDateTests::testStartYearAbsolute
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <option value="2013" selected="selected">2013</option>
++<option value="2014">2014</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:449
+
+28) PluginFunctionHtmlSelectDateTests::testStartYearRelative
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <select name="Date_Year">
+-<option value="2013" selected="selected">2013</option>
+ <option value="2014">2014</option>
+ <option value="2015">2015</option>
+ <option value="2016">2016</option>
+ <option value="2017">2017</option>
+ <option value="2018">2018</option>
++<option value="2019">2019</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:459
+
+29) PluginFunctionHtmlSelectDateTests::testStartYearRelativeNegative
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <select name="Date_Year">
+-<option value="2008">2008</option>
+ <option value="2009">2009</option>
+ <option value="2010">2010</option>
+ <option value="2011">2011</option>
+ <option value="2012">2012</option>
+ <option value="2013" selected="selected">2013</option>
++<option value="2014">2014</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:469
+
+30) PluginFunctionHtmlSelectDateTests::testEndYearAbsolute
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <option value="2013" selected="selected">2013</option>
++<option value="2014">2014</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:479
+
+31) PluginFunctionHtmlSelectDateTests::testEndYearRelative
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <select name="Date_Year">
+-<option value="2013" selected="selected">2013</option>
+ <option value="2014">2014</option>
+ <option value="2015">2015</option>
+ <option value="2016">2016</option>
+ <option value="2017">2017</option>
+ <option value="2018">2018</option>
++<option value="2019">2019</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:489
+
+32) PluginFunctionHtmlSelectDateTests::testEndYearRelativeNegative
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <select name="Date_Year">
+-<option value="2008">2008</option>
+ <option value="2009">2009</option>
+ <option value="2010">2010</option>
+ <option value="2011">2011</option>
+ <option value="2012">2012</option>
+ <option value="2013" selected="selected">2013</option>
++<option value="2014">2014</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:499
+
+33) PluginFunctionHtmlSelectDateTests::testDisplayDaysMonthYear
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <select name="Date_Year">
+-<option value="2013" selected="selected">2013</option>
++<option value="2014">2014</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:508
+
+34) PluginFunctionHtmlSelectDateTests::testYearsReversed
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <select name="Date_Year">
++<option value="2014">2014</option>
+ <option value="2013" selected="selected">2013</option>
+ <option value="2012">2012</option>
+ <option value="2011">2011</option>
+ <option value="2010">2010</option>
+ <option value="2009">2009</option>
+ <option value="2008">2008</option>
+ <option value="2007">2007</option>
+ <option value="2006">2006</option>
+ <option value="2005">2005</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:528
+
+35) PluginFunctionHtmlSelectDateTests::testMonthFormat
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <select name="Date_Year">
+-<option value="2013" selected="selected">2013</option>
++<option value="2014">2014</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:560
+
+36) PluginFunctionHtmlSelectDateTests::testMonthFormatValue
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <select name="Date_Year">
+-<option value="2013" selected="selected">2013</option>
++<option value="2014">2014</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:570
+
+37) PluginFunctionHtmlSelectDateTests::testMonthNames
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <select name="Date_Year">
+-<option value="2013" selected="selected">2013</option>
++<option value="2014">2014</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:580
+
+38) PluginFunctionHtmlSelectDateTests::testDayFormat
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <select name="Date_Year">
+-<option value="2013" selected="selected">2013</option>
++<option value="2014">2014</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:590
+
+39) PluginFunctionHtmlSelectDateTests::testDayFormatValue
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <select name="Date_Year">
+-<option value="2013" selected="selected">2013</option>
++<option value="2014">2014</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:600
+
+40) PluginFunctionHtmlSelectDateTests::testTimeArray
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <select name="namorized[foobar_Year]">
+-<option value="2013" selected="selected">2013</option>
++<option value="2014">2014</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectDateTests.php:620
+
+41) PluginFunctionHtmlSelectTimeTests::testMeridian
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <select name="Time_Meridian">
+-<option value="am" selected="selected">AM</option>
++<option value="am">AM</option>
+ <option value="pm">PM</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectTimeTests.php:873
+
+42) PluginModifierUnescapeTests::testHtmlall
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'aäЗдра><&amp;ääв�?�?твуйте'
++'aäЗдра><&amp;ääвсствуйте'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginModifierUnescapeTests.php:48
+
+43) PluginModifierUnescapeTests::testHtmlallWithoutMbstring
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'aäЗдра><&amp;ääв�?�?твуйте'
++'aäЗдра><&amp;ääвсствуйте'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginModifierUnescapeTests.php:57
+
+44) PluginModifierUnescapeTests::testUrl
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'aäЗдра><&amp;ääв�?�?тв?=+уйте'
++'aäЗдра><&amp;ääвсств?=+уйте'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginModifierUnescapeTests.php:66
+
+45) SecurityTests::testSmartyPhpAllowAsp
+asp_tags are disabled
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\SecurityTests.php:233
+
+FAILURES!
+Tests: 1182, Assertions: 1843, Failures: 45, Errors: 1.
