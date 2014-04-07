@@ -9,10 +9,12 @@
         {
             "name": "Monte Ohrt",
             "email": "monte@ohrt.com"
+            "role": "Project Founder"
         },
         {
             "name": "Uwe Tews",
             "email": "uwe.tews@googlemail.com"
+            "role": "Lead Developer"
         },
         {
             "name": "Rodney Rehm",
@@ -23,7 +25,6 @@
         "irc": "irc://irc.freenode.org/smarty",
         "issues": "http://code.google.com/p/smarty-php/issues/list",
         "forum": "http://www.smarty.net/forums/",
-        "source": "http://code.google.com/p/smarty-php/source/browse/"
     },
     "require": {
         "php": ">=5.2"
@@ -42,13 +43,8 @@
                 "name": "smarty/smarty",
                 "version": "3.1.18",
                 "dist": {
-                    "url": "http://www.smarty.net/files/Smarty-3.1.18.zip",
+                    "url": "https://github.com/smarty-php/smarty/archive/v3.1.18.zip",
                     "type": "zip"
-                },
-                "source": {
-                    "url": "http://smarty-php.googlecode.com/svn/",
-                    "type": "svn",
-                    "reference": "tags/v3.1.18/distribution/"
                 }
             }
         }
