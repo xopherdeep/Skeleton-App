@@ -8,12 +8,12 @@
     "authors": [
         {
             "name": "Monte Ohrt",
-            "email": "monte@ohrt.com"
+            "email": "monte@ohrt.com",
             "role": "Project Founder"
         },
         {
             "name": "Uwe Tews",
-            "email": "uwe.tews@googlemail.com"
+            "email": "uwe.tews@googlemail.com",
             "role": "Lead Developer"
         },
         {
@@ -24,19 +24,23 @@
     "support": {
         "irc": "irc://irc.freenode.org/smarty",
         "issues": "http://code.google.com/p/smarty-php/issues/list",
-        "forum": "http://www.smarty.net/forums/",
+        "forum": "http://www.smarty.net/forums/"
     },
     "require": {
         "php": ">=5.2"
     },
     "autoload": {
         "classmap": [
-            "distribution/libs/Smarty.class.php", 
-            "distribution/libs/SmartyBC.class.php",
-            "distribution/libs/sysplugins/smarty_security.php"
+            "libs/Smarty.class.php", 
+            "libs/SmartyBC.class.php",
+            "libs/sysplugins/smarty_security.php"
         ]
     },
     "repositories": [
+            {
+            "type": "vcs",
+            "url": "https://github.com/smarty-php/smarty"
+        },
         {
             "type": "package",
             "package": {
