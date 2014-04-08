@@ -36,18 +36,5 @@
             "distribution/libs/SmartyBC.class.php",
             "distribution/libs/sysplugins/smarty_security.php"
         ]
-    },
-    "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "name": "smarty/smarty",
-                "version": "3.1.18",
-                "dist": {
-                    "url": "https://github.com/smarty-php/smarty/archive/v3.1.18.zip",
-                    "type": "zip"
-                }
-            }
-        }
-    ]
+    }
 }
