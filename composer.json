@@ -31,10 +31,16 @@
     },
     "autoload": {
         "classmap": [
-            "distribution/libs/", 
-            "distribution/libs/Smarty.class.php", 
-            "distribution/libs/SmartyBC.class.php",
-            "distribution/libs/sysplugins/smarty_security.php"
+            "distribution/libs/"
         ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.1.19-dev"
+        }
+    },
+        "archive": {
+        "exclude": ["/development", "/documentation"]
     }
+
 }
