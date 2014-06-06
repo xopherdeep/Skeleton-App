@@ -1,0 +1,87 @@
+zPHPUnit 3.7.28 by Sebastian Bergmann.
+
+.............................................................   61 / 1182 (  5%)
+.............................................................  122 / 1182 ( 10%)
+.............................................................  183 / 1182 ( 15%)
+.............................................................  244 / 1182 ( 20%)
+.............................................................  305 / 1182 ( 25%)
+.............F...............................................  366 / 1182 ( 30%)
+.............................................................  427 / 1182 ( 36%)
+.............................................................  488 / 1182 ( 41%)
+.............................................................  549 / 1182 ( 46%)
+.............................................................  610 / 1182 ( 51%)
+..........................F..................................  671 / 1182 ( 56%)
+.............................................................  732 / 1182 ( 61%)
+.............................................................  793 / 1182 ( 67%)
+...........................................F.................  854 / 1182 ( 72%)
+.............................................................  915 / 1182 ( 77%)
+.....................................FFF.....................  976 / 1182 ( 82%)
+............................................................. 1037 / 1182 ( 87%)
+.....................................F....................... 1098 / 1182 ( 92%)
+............................................................. 1159 / 1182 ( 98%)
+.......................
+
+Time: 1 minute, Memory: 43.25Mb
+
+There were 7 failures:
+
+1) CompileBlockExtendsTests::testNocacheBlock_030_2
+Failed asserting that 'parent b1 b1_2*parent b2*grandchild b3 b3_2*include b3 b6_2*grandchild b6 b6_2*<br>child b4 b4_1*grandchild b4 b4_2**<br>child b5 b5_2*grandchild b5 b5_2**<br>child b61 b6_1*include 61 b6_2*grandchild b6 b6_2*<br>child b62 b6_2*include 62 b6_2*grandchild b6 b6_2*<br>child b63 b6_1*grandchild b6 b6_2*<br>child b64 b6_1*include b64 b6_2*grandchild b6 b6_2*<br>parent include b6_2*grandchild b6 b6_2*<br>parent include2 grandchild b6 b6_2*<br><br>' contains "child b61 b6_1*include 61 b6_1*grandchild b6 b6_1*".
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\CompileBlockExtendsTests.php:433
+
+2) ExtendsResourceTests::testNocacheBlock_030_2
+Failed asserting that 'parent b1 b1_2*parent b2*grandchild b3 b3_2*include b3 b6_2*grandchild b6 b6_2*<br>child b4 b4_1*grandchild b4 b4_2**<br>child b5 b5_2*grandchild b5 b5_2**<br>child b61 b6_1*include 61 b6_2*grandchild b6 b6_2*<br>child b62 b6_2*include 62 b6_2*grandchild b6 b6_2*<br>child b63 b6_1*grandchild b6 b6_2*<br>child b64 b6_1*include b64 b6_2*grandchild b6 b6_2*<br>parent include b6_2*grandchild b6 b6_2*<br>parent include2 grandchild b6 b6_2*<br><br>' contains "child b61 b6_1*include 61 b6_1*grandchild b6 b6_1*".
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\ExtendsResourceTests.php:88
+
+3) PluginFunctionHtmlSelectTimeTests::testMeridian
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ <select name="Time_Meridian">
+-<option value="am" selected="selected">AM</option>
++<option value="am">AM</option>
+ <option value="pm">PM</option>
+ </select>'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginFunctionHtmlSelectTimeTests.php:873
+
+4) PluginModifierUnescapeTests::testHtmlall
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'aäЗдра><&amp;ääв�?�?твуйте'
++'aäЗдра><&amp;ääвсствуйте'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginModifierUnescapeTests.php:48
+
+5) PluginModifierUnescapeTests::testHtmlallWithoutMbstring
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'aäЗдра><&amp;ääв�?�?твуйте'
++'aäЗдра><&amp;ääвсствуйте'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginModifierUnescapeTests.php:57
+
+6) PluginModifierUnescapeTests::testUrl
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'aäЗдра><&amp;ääв�?�?тв?=+уйте'
++'aäЗдра><&amp;ääвсств?=+уйте'
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\PluginModifierUnescapeTests.php:66
+
+7) SecurityTests::testSmartyPhpAllowAsp
+asp_tags are disabled
+
+C:\wamp\www\smarty3.1.0\development\PHPunit\SecurityTests.php:233
+
+FAILURES!
+Tests: 1182, Assertions: 1881, Failures: 7.
