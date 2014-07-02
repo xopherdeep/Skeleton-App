@@ -2,14 +2,13 @@
 /**
  * This class was intended to make my life to writing SQL statements a sinch.
  * The programmer only has to worry about passing the data. No more writing SQL!
- * Whenever Select or Insert Into is used with data arrays, this class will create
- * missing tables on befpre
+ * I know there are other alternatives, but I created this for the challenge of making it. 
+ * and it works perfectly for what i need to to :)
  * 
- * @author Christopher Pollard
- * @version v1.0.12.01.05.00
- * 
- * 
- * 
+ * @author Xopher Pollard
+ * @email heylisten@xtiv.net
+ * @version v1.1.0
+ * @data 7/01/2014s
  */
 
 if(!class_exists('xMySql')){
