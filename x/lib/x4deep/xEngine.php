@@ -1,8 +1,8 @@
 <?php
 	/**
-	 * xEngine
+	 * Xengine
 	 * @author XopherDeeP <heylisten@xtiv.net>
-	 * @version 1.0.0-rc1
+	 * @version 1.0.0-rc1.0.1
 	**/
 	# Xengine is Small and PowerFull; Hook into it using Xtras. The Xengine Idea is: Drop and Build!
 	# It setups an easy to use connection between Clean URLs and PHP Classes
@@ -12,12 +12,10 @@
 	# where class is the class name found in the Xtra's. ex: xClass.php, the method should be found there.
 	# If there is an HTML page to render with the method, the files go in the html dir, 
 
-	define('LIBS_DIR'	,$_SERVER['DOCUMENT_ROOT'].'/x/lib'); 			# Location of the Library Files
-
 	define('DOC_ROOT'	,$_SERVER['DOCUMENT_ROOT']);
-	
-	define('XPHP_DIR'	,DOC_ROOT.'/x/xtra'); 			# Location of the Library Files
-	define('BIN'	,DOC_ROOT.'/bin'); 			# Location of the Library Files
+	define('LIBS_DIR'	,DOC_ROOT.'/x/lib'); 			# Location of the Library Files
+	define('XPHP_DIR'	,DOC_ROOT.'/x/xtra'); 			# Location of the Xtras Files
+	define('BIN'		,DOC_ROOT.'/bin'); 				# Location of the Bin Files
 
 	
 	set_include_path(DOC_ROOT.'/x/lib');
@@ -69,129 +67,6 @@
 				define("DB_CFG", $cfg['dir']['cfg']."/cfg.db.$_SERVER[HTTP_HOST].inc");
 		}
 
-
-		/*
-	     */
-
-		 public function set($k,$v=false){
-	    	//$this->dump($this->_SET);
-	    	if(!is_array($k)){
-	    		//var_dump($k); 
-				return $this->_SET[$k] = $v;
-	    		$class = get_class($this);
-	    		$_SESSION[$class][$k] = $v;
-	    	}else if(is_array($k)){
-	    		return $this->_SET = array_merge($this->_SET,$k);
-	    		//return $this->_SET = $this->apply($k,$this->_SET);
-	    	}
-		}
-
-	 //    public function set($k,$v=false){
-	 //    	//$this->dump($this->_SET);
-	 //    	if(!is_array($k)){
-	 //    		//var_dump($k); 
-		// 		return $this->_SET[$k] = $v;
-	 //    		$class = get_class($this);
-	 //    		$_SESSION[$class][$k] = $v;
-	 //    	}else if(is_array($k)){
-	 //    		//$this->_SET = array_merge($k,$this->_SET);
-	 //    		return $this->_SET = $this->apply($k,$this->_SET);
-	 //    	}
-		// }
-
-		private function apply($array,$default){
-			$new = array();
-			foreach ($default as $key => $value) {
-				// if array has new from default.
-				if( isset( $array[$key] )){
-					if( is_array($array[$key]) ){
-						// we are dealing with an array, dig deeper.
-						$new[$key] = $this->apply($array[$key],$default[$key]);
-					} else {
-						// ok - we've hit a value, lets set it in the new array.
-						$new[$key] = $array[$key];
-					} 
-				}else{
-					// the new array that got passed.
-					$new[$key] = $value;
-				}
-			}
-			return $new;
-		}
-
-		private function mergeO($obj,$default){
-			foreach ($default as $key => $value) {
-				$obj->$key = $value;
-			}
-			return $obj;
-		}
-
-		public function shutDownFunction() { 
-			$error = error_get_last();
-		  
-		    $t = $error['type'];
-
-		    if($t === E_ERROR /*|| $t === E_WARNING*/){ 
-				//ob_clean();
-				function FriendlyErrorType($type){ 
-				    switch($type){ 
-				        case E_ERROR: // 1 // 
-				            return 'E_ERROR'; 
-				        case E_WARNING: // 2 // 
-				            return 'E_WARNING'; 
-				        case E_PARSE: // 4 // 
-				            return 'E_PARSE'; 
-				        case E_NOTICE: // 8 // 
-				            return 'E_NOTICE'; 
-				        case E_CORE_ERROR: // 16 // 
-				            return 'E_CORE_ERROR'; 
-				        case E_CORE_WARNING: // 32 // 
-				            return 'E_CORE_WARNING'; 
-				        case E_CORE_ERROR: // 64 // 
-				            return 'E_COMPILE_ERROR'; 
-				        case E_CORE_WARNING: // 128 // 
-				            return 'E_COMPILE_WARNING'; 
-				        case E_USER_ERROR: // 256 // 
-				            return 'E_USER_ERROR'; 
-				        case E_USER_WARNING: // 512 // 
-				            return 'E_USER_WARNING'; 
-				        case E_USER_NOTICE: // 1024 // 
-				            return 'E_USER_NOTICE'; 
-				        case E_STRICT: // 2048 // 
-				            return 'E_STRICT'; 
-				        case E_RECOVERABLE_ERROR: // 4096 // 
-				            return 'E_RECOVERABLE_ERROR'; 
-				        case E_DEPRECATED: // 8192 // 
-				            return 'E_DEPRECATED'; 
-				        case E_USER_DEPRECATED: // 16384 // 
-				            return 'E_USER_DEPRECATED'; 
-				    } 
-				    return ""; 
-				} 
-
-
-				$file = realpath($_SERVER['DOCUMENT_ROOT']);
-
-				$file = str_replace($file , '', $error['file']);
-
-			    $e = array(
-					'summary'     => FriendlyErrorType($error['type'])
-						.' :: '.$error['message'].' :: '.$file.'#L'.$error['line'], 
-					'description' => $error['message'].' :: '.'[source:trunk'.$file.'#L'.$error['line'].']
-',
-					'attr' => array(
-						'type'      => 'defect',
-						//'component' => 'x'.ucfirst($this->_SET['action']),
-						'priority'  => 'trivial',
-						'reporter'  => $_SESSION['user']['username'].'@'.$_SERVER['HTTP_HOST'],
-						'keywords'  =>  $this->_SET['action'].'::'. $this->_SET['method']
-					)
-				);
-
-				$this->reportSystemError($e);		    	
-		    }
-
-		}
 
 		/*
 			The Client has 'Knocked' on the website's 'Door'
@@ -296,6 +171,7 @@
 			// Back Door - Admin Panel of Pages. 
 			$this->atBackDoor  = ($this->_SET['params'][0] === $this->_CFG['dir']['backdoor']);	// BOOL
 
+
 			$this->atMailBox   = ($this->_SET['params'][0] === $this->_CFG['dir']['bin']);		// BOOL
 			
 		}
@@ -372,14 +248,7 @@
 		/*
 			Here is where we loop through the autoRun methods
 			allowing them to sniff the Request and do their own Magic.
-		*/
-
-		private function removeLocalData($r,$Q)
-			{
-			$r = str_replace($Q->db['database'].'.', '', $r);
-			$r = str_replace($Q->db['prefix'], '', $r);
-			return $r;
-		} 
+		*/ 
 
 		private function autoRunSniff(){
 			// autoRun the  requisets.
@@ -1110,6 +979,125 @@
 			$domain = implode('.',$domain);
 			return $domain;
 		}
+
+		
+
+		/*
+	     */
+
+		 public function set($k,$v=false){
+	    	//$this->dump($this->_SET);
+	    	if(!is_array($k)){
+	    		//var_dump($k); 
+				return $this->_SET[$k] = $v;
+	    		$class = get_class($this);
+	    		$_SESSION[$class][$k] = $v;
+	    	}else if(is_array($k)){
+	    		return $this->_SET = array_merge($this->_SET,$k);
+	    		 
+	    	}
+		} 
+
+		private function apply($array,$default){
+			$new = array();
+			foreach ($default as $key => $value) {
+				// if array has new from default.
+				if( isset( $array[$key] )){
+					if( is_array($array[$key]) ){
+						// we are dealing with an array, dig deeper.
+						$new[$key] = $this->apply($array[$key],$default[$key]);
+					} else {
+						// ok - we've hit a value, lets set it in the new array.
+						$new[$key] = $array[$key];
+					} 
+				}else{
+					// the new array that got passed.
+					$new[$key] = $value;
+				}
+			}
+			return $new;
+		}
+
+		private function mergeO($obj,$default){
+			foreach ($default as $key => $value) {
+				$obj->$key = $value;
+			}
+			return $obj;
+		}
+
+		public function shutDownFunction() { 
+			$error = error_get_last();
+		  
+		    $t = $error['type'];
+
+		    if($t === E_ERROR /*|| $t === E_WARNING*/){ 
+				//ob_clean();
+				function FriendlyErrorType($type){ 
+				    switch($type){ 
+				        case E_ERROR: // 1 // 
+				            return 'E_ERROR'; 
+				        case E_WARNING: // 2 // 
+				            return 'E_WARNING'; 
+				        case E_PARSE: // 4 // 
+				            return 'E_PARSE'; 
+				        case E_NOTICE: // 8 // 
+				            return 'E_NOTICE'; 
+				        case E_CORE_ERROR: // 16 // 
+				            return 'E_CORE_ERROR'; 
+				        case E_CORE_WARNING: // 32 // 
+				            return 'E_CORE_WARNING'; 
+				        case E_CORE_ERROR: // 64 // 
+				            return 'E_COMPILE_ERROR'; 
+				        case E_CORE_WARNING: // 128 // 
+				            return 'E_COMPILE_WARNING'; 
+				        case E_USER_ERROR: // 256 // 
+				            return 'E_USER_ERROR'; 
+				        case E_USER_WARNING: // 512 // 
+				            return 'E_USER_WARNING'; 
+				        case E_USER_NOTICE: // 1024 // 
+				            return 'E_USER_NOTICE'; 
+				        case E_STRICT: // 2048 // 
+				            return 'E_STRICT'; 
+				        case E_RECOVERABLE_ERROR: // 4096 // 
+				            return 'E_RECOVERABLE_ERROR'; 
+				        case E_DEPRECATED: // 8192 // 
+				            return 'E_DEPRECATED'; 
+				        case E_USER_DEPRECATED: // 16384 // 
+				            return 'E_USER_DEPRECATED'; 
+				    } 
+				    return ""; 
+				} 
+
+
+				$file = realpath($_SERVER['DOCUMENT_ROOT']);
+
+				$file = str_replace($file , '', $error['file']);
+
+			    $e = array(
+					'summary'     => FriendlyErrorType($error['type'])
+						.' :: '.$error['message'].' :: '.$file.'#L'.$error['line'], 
+					'description' => $error['message'].' :: '.'[source:trunk'.$file.'#L'.$error['line'].']',
+					'attr'        => array(
+						'type'      => 'defect',
+						//'component' => 'x'.ucfirst($this->_SET['action']),
+						'priority'  => 'trivial',
+						'reporter'  => $_SESSION['user']['username'].'@'.$_SERVER['HTTP_HOST'],
+						'keywords'  =>  $this->_SET['action'].'::'. $this->_SET['method']
+					)
+				);
+
+				$this->reportSystemError($e);		    	
+		    }
+
+		}
+
+		private function removeLocalData($r,$Q)
+			{
+			$r = str_replace($Q->db['database'].'.', '', $r);
+			$r = str_replace($Q->db['prefix'], '', $r);
+			return $r;
+		} 
+
 
 		///////////////////////////// 
 		//// Debug Functions
