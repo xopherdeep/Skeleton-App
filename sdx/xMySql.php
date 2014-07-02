@@ -5,8 +5,8 @@
  * Whenever Select or Insert Into is used with data arrays, this class will create
  * missing tables on befpre
  * 
- * @author Christopher Pollard
- * @version v1.0.12.01.05.00
+ * @author XopherDeeP
+ * @version v1.1.0
  * 
  * 
  * 
