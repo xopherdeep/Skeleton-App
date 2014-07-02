@@ -1,3 +1,9 @@
 [submodule "SuperDom"]
 	path = SuperDom
 	url = https://github.com/XenGenie/SuperDom.git
+[submodule "x/lib/x4deep"]
+	path = x/lib/x4deep
+	url = https://github.com/xopherdeep/x4deep
+[submodule "x/lib/smarty"]
+	path = x/lib/smarty
+	url = https://github.com/smarty-php/smarty.git
