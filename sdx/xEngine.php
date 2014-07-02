@@ -1,10 +1,9 @@
 <?php
 	/**
-	 * Xengine
+	 * xEngine
 	 * @author XopherDeeP <heylisten@xtiv.net>
-	 * @version 1.0.0-rc1.0
+	 * @version 1.0.0-rc1
 	**/
-
 	# Xengine is Small and PowerFull; Hook into it using Xtras. The Xengine Idea is: Drop and Build!
 	# It setups an easy to use connection between Clean URLs and PHP Classes
 	# The eXtend PHP Classes with Xengine allowing Easy Access to the the DB using $q = $this->q(); 
