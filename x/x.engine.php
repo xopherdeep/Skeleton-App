@@ -21,7 +21,7 @@
 	// @todo: Keep Being Awesome.
 	require("cfg/cfg.lang.inc");
 	require("cfg/cfg.x.inc");
-	require('lib/x4deep/Xengine.php');
+	require('lib/x4deep/xengine.php');
 
 	// Set
 	$X = new Xengine($cfg);
